@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    width: 100vw;
+    height: 100vh;
+    background-color: dimgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card{
+    width: 400px;
+    height: 400px;
+}
+
+.wh{
+    width: 80%;
+    height: 80%;
+}
+
+.box{
+    border: 2px solid grey;
+    border-radius: 5%;
+    animation: spin 15s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 30px #000;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+        box-shadow: 0 0 30px #fff;
+    }
+    10%{
+        box-shadow: 0 0 30px pink;
+    }
+    20%{
+        box-shadow: 0 0 30px plum;
+    }
+    30%{
+        box-shadow: 0 0 30px orangered;
+    }
+    40%{
+        box-shadow: 0 0 30px orange;
+    }
+    50%{
+        box-shadow: 0 0 30px yellow;
+    }
+    60%{
+        box-shadow: 0 0 30px yellowgreen;
+    }
+    70%{
+        box-shadow: 0 0 30px lightgreen;
+    }
+    80%{
+        box-shadow: 0 0 30px darkcyan;
+    }
+    90%{
+        box-shadow: 0 0 30px cyan;
+    }
+    100%{
+        transform: rotate(360deg);
+        box-shadow: 0 0 30px #fff;
+    }
+    
+}
